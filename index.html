@@ -13,22 +13,36 @@
     <link href="https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@100;200;400&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;600&family=Roboto+Mono:wght@100;200;400&display=swap" rel="stylesheet">
 
+    <!-- favicon -->
+    <link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>⏳</text></svg>">
+
     <!-- stylesheets -->
     <link rel="stylesheet" href="style.css">
   </head>
 
   <body>
-    <h1>
-      <span id="js">JS</span> Stopwatch
-    </h1>
-    <button>
-      <i class="fas fa-stopwatch"></i>
-      <i class="fas fa-stop"></i>
-    </button>
-    <button>
-      <i class="fas fa-redo"></i>
-    </button>
-    <span>00:00:00</span>
+    <div class="stopwatch">
+
+      <h1>
+        <span id="js">JS</span> Stopwatch
+      </h1>
+
+      <div class="circle">
+        <span class="time" id="display">00:00:00</span>
+      </div>
+
+      <div class="controls">
+        <button class="buttonPlay">
+          <i id="playButton" class="fas fa-stopwatch fa-4x"></i>
+          <i id="pauseButton" class="fas fa-stop fa-4x"></i>
+        </button>
+
+        <button id="buttonReset">
+          <i id="resetButton" class="fas fa-redo fa-4x"></i>
+        </button>
+      </div>
+
+    </div>
     <script src="script.js"></script>
   </body>
 
